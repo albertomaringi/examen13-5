@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>Formulario de perfumería</title>
+</head>
+<link rel="stylesheet" href="./css/estilos.css">
+<body>
+    <h1 id="titulo">Encuesta sobre Perfumería</h1>
+    <p id="descripcion"> ¿Cuáles son tus gustos sobre fragancias? Llena los placeholder con tu información </p>
+    
+      <div id="container">
+       <p><label for="texto" id="label_nombre"><strong>Nombre:</strong> </label></p>
+           <p><input id="nombre" type="text" placeholder="i.e. Rita de la Torre" required>
+         </p>
+        <p>
+            <label for="texto"><strong>Edad (opcional):</strong> </label></p>
+            <p><input id="edad" type="text" placeholder="1900.com" required>
+            </p>
+            <legend ><strong>¿Cuál es tu familia olfativa preferida?</strong></legend>
+                 <p>
+                    <label for="seleccion"></label>
+                    <select id="familia">
+                       <optgroup label="Tipos">
+                          <option value="1">Cítrica o Hespéride</option>
+                          <option value="2">Floral</option>
+                          <option value="3">Amaredada</option>
+                          <option value="4">Fougère</option>
+                          <option value="5">Chipre</option>   
+                          <option value="6">Gourmand</option>  
+                       </optgroup>
+                    </select>
+                 </p>
+                 
+                    <legend><strong>¿Qué tipos de fragancias prefieres?</strong></legend>
+                        <p><label><input id="femenina" type="radio" name="tipo_fragancia" value="1 checked">Femenina</label></p>
+                        <p><label><input id="masculina" type="radio" name="tipo_fragancia" value="2 checked">Masculina</label></p>
+                        <p><label><input id="unisex" type="radio" name="tipo_fragancia" value="2 checked">Unisex</label></p>
+                    
+                   
+                        <legend><strong>¿Qué concentraciones utilizas de manera habitual? (selecciona todos los que quieras)</strong></legend>
+                            <p><label><input id="ef" type="checkbox" name="concentraciones" value="1 checked"><strong>Eau Fraîche (EF)</strong>: 1-3%, duración corta, ideal para climas cálidos</label></p>
+                            <p><label><input id="edc" type="checkbox" name="concentraciones" value="2 checked"><strong>Eau de Cologne (EDC)</strong>: 3-5%, duración moderada, ideal para el uso diario.</label></p>
+                            <p><label><input id="edt" type="checkbox" name="concentraciones" value="3 checked"><strong>Eau de Toilette (EDT)</strong>: 4-8%, duración media, versátil para diferentes ocasiones.</label></p>
+                            <p><label><input id="edt" type="checkbox" name="concentraciones" value="4 checked"><strong>Eau de Parfum (EDP)</strong>: 8-15%, duración prolongada, para la noche o eventos</label></p>
+                            <p><label><input id="parfum" type="checkbox" name="concentraciones" value="5 checked"><strong>Parfum (P) o Extrait de Parfum</strong>: 15-30%, duración muy prolongada.</label></p>
+                        
+                        <legend>
+                            <p>
+                            <label for="textArea"><strong>Nombra tres de tus perfumes preferidos: </strong></label></p>
+                            <p><textarea id="textArea" rows="3" cols="50">i.e: Knowing (Estée Lauder), Aromatic Elixir (Clinique) y Coco (Chanel)</textarea>
+                         </p>
+                        </legend>
+                 <p>
+                    <label for="boton1"></label>
+                    <input id="boton1" type="button" value="Enviar" onclick="enviar">
+                 </p>
+</div> 
+</body>
+</html>
